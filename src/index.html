@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Pagination</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">Пошук зображень</h1>
+
+        <form class="search-form">
+            <input id="search-bar" type="text" name="searchQuery" autocomplete="off" placeholder="Що шукаємо?" />
+            <button type="submit" id="search-button">
+                <img class="search-icon" src="https://2968370803-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fum9Uext4aKNHZfAw1WzJ%2Fuploads%2Fsjt0CJt60PjsNQnUhtxB%2Fsearch-glass.svg?alt=media&token=db123d8d-318b-4b28-98e3-cad32e367ed3">
+            </button>
+        </form>
+
+    </header>
+
+    <main>
+        <div class="gallery" aria-live="polite">
+            <div class="photo-card">
+                <img src="" alt="" loading="lazy" />
+                <div class="info">
+                    <p class="info-item">
+                        <b>Вподобайки</b>
+                    </p>
+                    <p class="info-item">
+                        <b>Перегляди</b>
+                    </p>
+                    <p class="info-item">
+                        <b>Завантаження</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <nav class="pagination-container is-hidden" id="pagination-container">
+            <button class="pagination-button" id="prev-button" title="Previous page" aria-label="Previous page">
+                &lt;
+            </button>
+
+            <div id="pagination-numbers"></div>
+
+            <button class="pagination-button" id="next-button" title="Next page" aria-label="Next page">
+                &gt;
+            </button>
+        </nav>
+
+    </main>
+
+    <script type="module" src="./js/pagination.js"></script>
+</body>
+
+</html>
